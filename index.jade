@@ -11,15 +11,15 @@ html(lang="en")
     nav.top-nav.landing-nav
       .nav-content.container
         .nav-left
-          ul.nav
+          ul.nav-items
             li: a(href="#") Browse Anime
         .nav-center
           a(href="#"): img.nav-logo(src="./img/logo.png")
         .nav-right
-          ul.nav
-            li: a(href="#").btn.landing-nav-btn Login
-            li: a(href="#").btn.landing-nav-btn Register
-    main.landing
+          ul.nav-items
+            li: a(href="#").btn.btn-landing-nav Login
+            li: a(href="#").btn.btn-landing-nav Register
+    main.main-landing
       section#hero.hero
         .hero-media
           .hero-media-overlay
@@ -29,7 +29,7 @@ html(lang="en")
         .hero-introduction
           img.hero-introduction-brand(src="./img/brand.png")
           p Share anime and manga experiences, get recommendations and see what friends are watching or reading.
-          a(href="#").btn.hero-btn.facebook-btn
+          a(href="#").btn.btn-hero.btn-facebook
             i.fa.fa-facebook-square
             |  Login with Facebook
           p or 
@@ -42,4 +42,30 @@ html(lang="en")
           p.section-description
             | Your personal activity feed allows you to share your experiences, news, videos, images and music
             | with other anime and manga fans that are following you.
-
+          img(src="./img/profile-preview.jpg")
+      section#recent
+        .section-content
+          h1 Recent Posts on Hummingbird
+          // TODO
+      section#library
+        .section-content
+          h1 Find your favorites, build your collection.
+          p.subtitle Your favorite anime is shit, but we won't hold that against you.
+          p.section-description
+            | Keep track of what you've seen, read, and look forward to.
+            br
+            | We'll even tell you how much of your life you've spent watching anime.
+          img(src="./img/library-preview.jpg")
+      section#ready
+        .section-content
+          h1 Ready to get started?
+          p.subtitle We're glad you've finally noticed us, senpai ...uguu.
+          ul.ready-buttons
+            li: a.btn.btn-faded(href="#") Register with Email
+            li: a.btn.btn-facebook(href="#") Login with Facebook
+    footer.global-footer.container
+      ul.footer-links
+        li &copy; 2016 Hummingbird Media, Inc.
+        li: a(href="#") Privacy
+        li: a(href="#") Contact
+      img.footer-img(src="./img/footer-logo.png")
