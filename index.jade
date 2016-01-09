@@ -2,11 +2,22 @@ doctype html
 html(lang="en")
   head
     title Hummingbird
+
+    // CSS
+
+    // Consistent cross-browser rendering
     link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css")
+
+    // Font icons
     link(rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+
+    // Fonts
     link(rel="stylesheet" type"text/css" href="https://fonts.googleapis.com/css?family=Arvo")
     link(rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans")
+
+    // Main CSS
     link(rel="stylesheet" type="text/css" href="./css/index.css")
+
   body
     nav.top-nav.landing-nav
       .nav-content.container
@@ -19,6 +30,7 @@ html(lang="en")
           ul.nav-items
             li: a(href="#").btn.btn-landing-nav Login
             li: a(href="#").btn.btn-landing-nav Register
+
     main.landing-main
       section#hero.hero
         .hero-media
@@ -35,6 +47,7 @@ html(lang="en")
           p or 
             a(href="#").underline register with your email
           a.hero-learn-more(href="#about"): img.chevron-down(alt="Learn More" src="./img/chevron-down.svg")
+
       section#about
         .section-content
           h1 Hummingbird is kawaii, baka gaijin.
@@ -43,11 +56,13 @@ html(lang="en")
             | Your personal activity feed allows you to share your experiences, news, videos, images and music
             | with other anime and manga fans that are following you.
           img(src="./img/profile-preview.jpg")
+
       section#recent
         .container
           h2 Recent Posts on Hummingbird
           // TODO
           img(src="./img/posts-preview.png")
+
       section#library
         .section-content
           h1 Find your favorites, build your collection.
@@ -57,6 +72,7 @@ html(lang="en")
             br
             | We'll even tell you how much of your life you've spent watching anime.
           img(src="./img/library-preview.jpg")
+
       section#ready
         .section-content
           h1 Ready to get started?
@@ -64,6 +80,7 @@ html(lang="en")
           .ready-buttons
             a.btn.btn-faded(href="#") Register with Email
             a.btn.btn-facebook(href="#") Login with Facebook
+
     footer.global-footer
       .footer-content.container
         ul.footer-links
@@ -73,5 +90,9 @@ html(lang="en")
         img.footer-img(src="./img/footer-logo.png")
 
     // Scripts
+
+    // jQuery
     script(type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js")
+
+    // Main JS
     script(type="text/javascript" src="./js/index.js")
