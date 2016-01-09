@@ -3,10 +3,15 @@ gray = #e6e6e6
 
 // General
 
+@font-face
+  font-family klavika
+  src url("../font/klavika.otf")
+
 *
   box-sizing border-box
 
 body
+  overflow-x hidden
   background-color gray
   font-family "Open Sans", sans-serif
   font-size 16px
@@ -17,9 +22,25 @@ a
   &:hover
     opacity 0.6
 
+p
+  margin 0 0 10px
+
 for num in (1..6)
   h{num}
+    margin-top 20px
+    margin-bottom 10px
+    line-height 1.1
     font-family "klavika", Helvetica, Arial, sans-serif
+    font-weight normal
+    color #484848
+
+h1, .h1
+  font-size 36px
+
+.subtitle
+  line-height 1.5
+  font-weight bold
+  color #545353
 
 .btn
   display inline-block
@@ -40,13 +61,15 @@ for num in (1..6)
   border-bottom 1px solid
 
 .container
-  width 1170px
+  max-width 1170px
   margin-left auto
   margin-right auto
   padding-left 15px
   padding-right 15px
 
 main.landing
+  h1
+    color #484848
   section
     padding-top 30px
     text-align center
@@ -116,6 +139,7 @@ section.hero
   position relative
   overflow hidden
   height 100vh
+  padding 0
   color white
   font-size 19px
   a
@@ -145,6 +169,7 @@ video.hero-media-video
 .hero-introduction
   height 100%
   max-width 600px
+  padding 15px
   margin auto
   display flex
   flex-flow column
@@ -156,10 +181,11 @@ video.hero-media-video
 
 img.hero-introduction-brand
   width 260px
+  max-width 100%
   height auto
 
 .hero-btn
-  width 300px
+  max-width 300px
   font-size 18px
 
 .hero-learn-more
@@ -167,7 +193,16 @@ img.hero-introduction-brand
   bottom 50px
   left 50%
   margin-left -25px
-  width 50px
+  min-width 50px
 
-// About section
+// General sections
 
+.section-content
+  max-width 800px
+  padding 0 15px
+  margin auto
+
+.section-description
+  color #707070
+  font-size 20px
+  margin 30px 0

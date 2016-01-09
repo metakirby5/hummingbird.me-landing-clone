@@ -2,22 +2,23 @@ doctype html
 html(lang="en")
   head
     title Hummingbird
-    link(rel="stylesheet" type="text/css" href="./css/normalize.css")
-    link(href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css")
+    link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css")
+    link(rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
+    link(rel="stylesheet" type"text/css" href="https://fonts.googleapis.com/css?family=Arvo")
+    link(rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans")
     link(rel="stylesheet" type="text/css" href="./css/index.css")
   body
-    header
-      nav.top-nav.landing-nav
-        .nav-content.container
-          .nav-left
-            ul.nav
-              li: a(href="#") Browse Anime
-          .nav-center
-            a(href="#"): img.nav-logo(src="./img/logo.png")
-          .nav-right
-            ul.nav
-              li: a(href="#").btn.landing-nav-btn Login
-              li: a(href="#").btn.landing-nav-btn Register
+    nav.top-nav.landing-nav
+      .nav-content.container
+        .nav-left
+          ul.nav
+            li: a(href="#") Browse Anime
+        .nav-center
+          a(href="#"): img.nav-logo(src="./img/logo.png")
+        .nav-right
+          ul.nav
+            li: a(href="#").btn.landing-nav-btn Login
+            li: a(href="#").btn.landing-nav-btn Register
     main.landing
       section#hero.hero
         .hero-media
@@ -28,9 +29,17 @@ html(lang="en")
         .hero-introduction
           img.hero-introduction-brand(src="./img/brand.png")
           p Share anime and manga experiences, get recommendations and see what friends are watching or reading.
-          a(href="#").btn.hero-btn.facebook-btn Login with Facebook
+          a(href="#").btn.hero-btn.facebook-btn
+            i.fa.fa-facebook-square
+            |  Login with Facebook
           p or 
             a(href="#").underline register with your email
           a.hero-learn-more(href="#about"): img.chevron-down(alt="Learn More" src="./img/chevron-down.svg")
       section#about
-        h1 Hummingbird is kawaii, baka gaijin.
+        .section-content
+          h1 Hummingbird is kawaii, baka gaijin.
+          p.subtitle Our obnoxious use of worn out Japanese phrases lets you know we're the real deal.
+          p.section-description
+            | Your personal activity feed allows you to share your experiences, news, videos, images and music
+            | with other anime and manga fans that are following you.
+
