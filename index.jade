@@ -19,7 +19,7 @@ html(lang="en")
               li: a(href="#").btn.landing-nav-btn Login
               li: a(href="#").btn.landing-nav-btn Register
     main.landing
-      section.hero
+      section#hero.hero
         .hero-media
           .hero-media-overlay
           .hero-media-fallback
@@ -31,5 +31,6 @@ html(lang="en")
           a(href="#").btn.hero-btn.facebook-btn Login with Facebook
           p or 
             a(href="#").underline register with your email
-      section.about
+          a.hero-learn-more(href="#about"): img.chevron-down(alt="Learn More" src="./img/chevron-down.svg")
+      section#about
         h1 Hummingbird is kawaii, baka gaijin.
