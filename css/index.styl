@@ -1,7 +1,10 @@
+// Variables
+gray = #e6e6e6
+
 // General
 
 body
-  background-color #e6e6e6
+  background-color gray
   font-family "Open Sans", sans-serif
   font-size 16px
 
@@ -10,6 +13,10 @@ a
   text-decoration none
   &:hover
     opacity 0.6
+
+for num in (1..6)
+  h{num}
+    font-family "klavika", Helvetica, Arial, sans-serif
 
 .btn
   border-radius 4px
@@ -23,6 +30,13 @@ a
   padding-left 15px
   padding-right 15px
 
+main.landing
+  section
+    padding-top 30px
+    text-align center
+    &:nth-child(even)
+      background white
+
 // Navbar
 
 nav.top-nav
@@ -33,9 +47,9 @@ nav.top-nav
   z-index 1000
   height 80px
 
-nav.guest-nav
+nav.landing-nav
   background-color transparent
-  border-bottom 1px solid rgba(255,255,255,0.25)
+  border-bottom 1px solid rgba(255 255 255 0.25)
   color white
 
 .nav-content
@@ -84,25 +98,31 @@ img.nav-logo
 
 section.hero
   position relative
+  overflow hidden
   height 100vh
 
-.hero-media
-  width 100%
-  height 100%
+.hero-media *
+  position absolute
+  top 0
+  left 0
+  min-width 100%
+  min-height 100%
 
 .hero-media-overlay
-  position absolute
-  z-index 200
-  width 100%
-  height 100%
-  background-color rgba(0,0,0,0.5)
+  z-index -100
+  background-color rgba(0 0 0 0.5)
   background-image url("../img/hero-grid.png")
 
 .hero-media-fallback
-  position absolute
-  z-index 100
-  width 100%
-  height 100%
+  z-index -300
   background-position center top
   background-size cover
   background-image url("../img/hero-fallback.jpg")
+
+.hero-media-video
+  z-index -200
+
+// About section
+
+section.about
+  background white

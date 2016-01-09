@@ -7,7 +7,7 @@ html(lang="en")
     link(rel="stylesheet" type="text/css" href="./css/index.css")
   body
     header
-      nav.top-nav.guest-nav
+      nav.top-nav.landing-nav
         .nav-content.container
           .nav-left
             ul.nav
@@ -16,12 +16,14 @@ html(lang="en")
             a(href="#"): img.nav-logo(src="./img/logo.png")
           .nav-right
             ul.nav
-              li: a(href="#").btn.guest-nav-btn Login
-              li: a(href="#").btn.guest-nav-btn Register
-    main
+              li: a(href="#").btn.landing-nav-btn Login
+              li: a(href="#").btn.landing-nav-btn Register
+    main.landing
       section.hero
         .hero-media
           .hero-media-overlay
           .hero-media-fallback
+          video.hero-media-video(preload loop webkit-playsinline="webkit-playsinline" autoplay="autoplay" poster="./img/hero-video-preload.jpg")
+            source(type="video/webm" src="./img/hero-video.webm")
       section.about
-        h2 Hummingbird is kawaii, baka gaijin.
+        h1 Hummingbird is kawaii, baka gaijin.
