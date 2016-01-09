@@ -230,10 +230,13 @@ for area in left center right
 // Ready section
 
 .ready-buttons
-  margin 40px -5px 0 -5px
-  & > li
-    display inline
+  display flex
+  justify-content center
+  margin 30px -5px 0 -5px
+  & > *
     margin 5px
+  @media screen and (max-width: 500px)
+    flex-flow column
 
 // Footer
 
