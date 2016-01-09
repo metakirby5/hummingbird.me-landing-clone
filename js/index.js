@@ -1,5 +1,6 @@
 $(function() {
   var $document = $(document)
+    , $root = $('html, body')
     , $landingNav = $('.landing-nav');
 
   // Invert scrollbar if not at top
@@ -8,5 +9,13 @@ $(function() {
       $landingNav.removeClass('inverse');
     else
       $landingNav.addClass('inverse');
+  });
+
+  // Smooth anchors
+  $('a[href*=#]').click(function(){
+    $root.animate({
+      scrollTop: $( $.attr(this, 'href') ).offset().top - 80
+    }, 1000);
+    return false;
   });
 });
