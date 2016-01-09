@@ -12,10 +12,14 @@ $(function() {
   });
 
   // Smooth anchors
-  $('a[href*=#]').click(function(){
-    $root.animate({
-      scrollTop: $( $.attr(this, 'href') ).offset().top - 80
-    }, 1000);
+  $('a[href*="#"]').click(function(){
+    var offset = $($(this).attr('href')).offset();
+
+    if (offset)
+      $root.animate({
+        scrollTop: offset.top - 80 // make room for navbar
+      }, 1000);
+
     return false;
   });
 });

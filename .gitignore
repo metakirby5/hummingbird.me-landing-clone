@@ -1,3 +1,4 @@
 # Ignore rendered files
-*.css*
+bower_components
+css/*.css*
 *.html
