@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+  head
+    title Hummingbird
+    link(rel="stylesheet" type="text/css" href="./css/normalize.css")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css")
+    link(rel="stylesheet" type="text/css" href="./css/index.css")
+  body
+    header
+      nav.guest-nav
+        .container
+          .nav-content
+            .nav-left
+              ul.nav
+                li: a(href="#") Browse Anime
+            .nav-brand
+              a(href="#").logo
+            .nav-right
+              ul.nav
+                li: a(href="#").btn.guest-nav-btn Login
+                li: a(href="#").btn.guest-nav-btn Register
+    main
+      section.hero
+        .hero-media
+          .hero-media-overlay
+          .hero-media-fallback
+      section.about
+        h2 Hummingbird is kawaii, baka gaijin.
