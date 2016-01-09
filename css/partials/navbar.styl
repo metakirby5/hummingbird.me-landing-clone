@@ -1,0 +1,49 @@
+.top-nav
+  z-index 1000
+  position fixed
+  left 0
+  right 0
+  top 0
+  height 80px
+
+.nav-content
+  height 100%
+  display flex
+  justify-content space-between
+  padding auto 0 auto 0
+
+.nav-items > li
+  display inline-block
+  & > a
+    display inline-block
+    color white
+    line-height 20px
+    &.btn
+      font-size 14px
+      padding-left 20px
+      padding-right 20px
+
+for area in left center right
+  .nav-{area}
+    display flex
+    align-items center
+.nav-left
+  flex 1
+  justify-content flex-start
+  .nav-items > li
+    margin-right 15px
+  @media (max-width: 991px)
+    display none
+.nav-center
+  justify-content center
+  .nav-items > li
+    margin 7px
+.nav-right
+  flex 1
+  justify-content flex-end
+  .nav-items > li
+    margin-left 15px
+
+.nav-logo
+  height 50px
+  width auto
