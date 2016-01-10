@@ -34,6 +34,10 @@
   extensive svg manipulation.
 - There are no loading animations.
 - The "Recent Posts" section is a static image.
+- The introduction text in the hero section is centered relative to the full
+  height of the page, rather than the height of the page minus the navbar.
+- On mobile, the "Login" and "Register" buttons in the navbar don't switch
+  order. I'm not sure why they do this on the actual website.
 
 ### Things to Note
 
