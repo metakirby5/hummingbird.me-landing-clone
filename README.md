@@ -2,15 +2,17 @@
 
 - Name: Ethan Chan
 - PID: A11221627
-- Option chosen: 2
 
 ## Part 1
 
-### Website Chosen
-
-[hummingbird.me](https://hummingbird.me/)
+- Option chosen: 2
+- Website chosen: [hummingbird.me](https://hummingbird.me/)
+- Entry point: `index.html`
 
 ### Tools Used
+
+Note: you don't need to install any of these! Everything comes bundled in this
+folder, and all the HTML and CSS files have been compiled.
 
 - [Bower](http://bower.io/):
   a package manager for the web
