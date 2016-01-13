@@ -55,4 +55,8 @@ folder, and all the HTML and CSS files have been compiled.
 
 ## Part 2
 
-TODO
+See `skill_inventory.pdf`.
+
+## Part 3
+
+See `trends.pdf`.
